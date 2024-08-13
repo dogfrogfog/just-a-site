@@ -11,15 +11,15 @@
 }
 
 .light {
-  --bg: #f6f6f6;
-  --text: #222222;
-  --text-secondary: #666666;
-  --primary: #4f46e5;
+  --bg: #fffcf2;
+  --text: #252422;
+  --text-secondary: #403d39;
+  --primary: #eb5e28;
 }
 
 .dark {
-  --bg: #222222;
-  --text: #f6f6f6;
-  --text-secondary: #999999;
-  --primary: #4f46e5;
+  --bg: #252422;
+  --text: #fffcf2;
+  --text-secondary: #403d39;
+  --primary: #eb5e28;
 }

@@ -1,9 +1,10 @@
-import { sectionsPresets } from "@/contentSections/presets";
+// import { sectionsPresets } from "@/contentSections/presets";
 import { definePathname } from "@tinloof/sanity-studio";
 import { defineField, defineType } from "sanity";
 
 import sections from "@/lib/schemas/sections";
-import { componentsWithBlocksInput } from "@/lib/templateSelectorInput";
+
+// import { componentsWithBlocksInput } from "@/lib/templateSelectorInput";
 
 export default defineType({
   type: "document",
@@ -32,9 +33,9 @@ export default defineType({
       of: sections.map((section) => ({
         type: section.name,
       })),
-      components: componentsWithBlocksInput({
-        presets: Object.values(sectionsPresets).flat(),
-      }),
+      // components: componentsWithBlocksInput({
+      //   presets: Object.values(sectionsPresets).flat(),
+      // }),
     }),
     defineField({
       type: "string",
