@@ -26,9 +26,11 @@ export default {
   },
   fields: [
     defineField({
-      name: "text",
-      type: customRichText.name,
+      name: "columns",
+      type: "array",
       group: "content",
+      of: [{ type: customRichText.name }],
+      validation: (Rule) => Rule.required().min(1).max(3),
     }),
     defineField({
       name: "theme",
@@ -57,9 +59,9 @@ export default {
       return {
         title: block
           ? block.children
-            .filter((child: { _type: string }) => child._type === "span")
-            .map((span: { text: any }) => span.text)
-            .join("")
+              .filter((child: { _type: string }) => child._type === "span")
+              .map((span: { text: any }) => span.text)
+              .join("")
           : "No text",
       };
     },

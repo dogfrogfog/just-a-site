@@ -1,4 +1,3 @@
-import { blogPost } from "@/contentSections/Blog/schema";
 import {
   clickableImageCard,
   defaultCard,
@@ -23,7 +22,6 @@ const schemas = [
   richTextBreak,
   basicRichText,
   clickableImageCard,
-  blogPost,
   ...sections,
 ];
 
