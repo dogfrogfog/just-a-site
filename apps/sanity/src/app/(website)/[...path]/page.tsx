@@ -13,6 +13,9 @@ export async function generateStaticParams() {
 
   const paths = pages.filter((p) => p !== "/");
 
+  console.log("paths");
+  console.log(paths);
+
   return paths;
 }
 
